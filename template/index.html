@@ -15,35 +15,220 @@
 <body>
 <header>
     <nav class="navbar navbar-default">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="row navbar-header col-md-5">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                        data-target="#myNavbar" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a href="index.html"><h1 class="main-text">YOUR LOGO</h1></a>
-            </div>
-            <div class="navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">ГЛАВНАЯ</a></li>
-                    <li><a href="#">ДОСТАВКА И ОПЛАТА</a></li>
-                    <li><a href="#">КОНТАКТЫ</a></li>
-                    <li><a href="#">КОРЗИНА</a></li>
-                    <li><a class="head-flag" href="#"><img src="img/usa_flag.png" alt=""/></a></li>
-                    <li><a class="head-flag" href="#" style="margin-right: 40px"><img src="img/ru_flag.png" alt=""/></a></li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="row navbar-header col-md-5">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#myNavbar" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="index.html"><h1 class="main-text">YOUR LOGO</h1></a>
+        </div>
+        <div class="navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">ГЛАВНАЯ</a></li>
+                <li><a href="#">ДОСТАВКА И ОПЛАТА</a></li>
+                <li><a href="#">КОНТАКТЫ</a></li>
+                <li><a href="#">КОРЗИНА</a></li>
+                <li><a class="head-flag" href="#"><img src="img/usa_flag.png" alt=""/></a></li>
+                <li><a class="head-flag" href="#" style="margin-right: 40px"><img src="img/ru_flag.png" alt=""/></a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
     </nav>
 </header>
 <section class="jumbotron">
     <div class="container">
         <div class="row">
+            <div class="jumb-content">
+                <h3>При заказе двух сетов «Филадельфия»</h3>
 
+                <h3 class="discount">СКИДКА 20%!</h3>
+                <button type="button" class="btn btn-default">Заказать</button>
+            </div>
         </div>
+    </div>
+</section>
+<section class="main-content">
+    <div class="row">
+        <div class="dishes-nav">
+            <ul class="nav navbar-nav">
+                <li><a href="#">РОЛЛЫ</a></li>
+                <li><a href="#">ПИЦЦА</a></li>
+                <li><a href="#">БУРГЕРЫ</a></li>
+                <li><a href="#">ПАСТА</a></li>
+                <li><a href="#">САЛАТЫ</a></li>
+                <li><a href="#">ДЕСЕРТЫ</a></li>
+                <li><p>Товаров на <br/> сумму <span>0 грн</span></p></li>
+                <li><i class="fa fa-shopping-basket fa-3x" aria-hidden="true"></i></li>
+            </ul>
+        </div>
+        <div class="container">
+            <div class="main-dish-menu">
+                <h1>Новинки</h1>
+                <!--First row-->
+                <div class="col-sm-3 dish-card">
+                    <img class="dish-img" src="img/dishes/salad.jpg" alt=""/>
+
+                    <p class="dish-title">Салат с сёмгой</p>
+
+                    <p class="dish-desk">Сёмга, огурец, помидор, <br/> листья салата, перец <br/> болгарский, кунжут,
+                        <br/> заправка
+                        <br/> 200гр</p>
+
+                    <div class="dish-counter">
+                        <label for="qty">Количество порций</label><br/>
+                        <button class="btn-default" id="left" onclick="modify_qty(-1)"></button>
+                        <input id="qty" value="0"/>
+                        <button class="btn-default" id="right" onclick="modify_qty(1)"></button>
+                    </div>
+                    <p class="dish-price"><span>60</span>грн</p>
+                    <button type="button" class="btn btn-default order-button">в корзину</button>
+                </div>
+                <div class="col-sm-3 dish-card">
+                    <img class="dish-img" src="img/dishes/salad.jpg" alt=""/>
+
+                    <p class="dish-title">Салат с сёмгой</p>
+
+                    <p class="dish-desk">Сёмга, огурец, помидор, <br/> листья салата, перец <br/> болгарский, кунжут,
+                        <br/> заправка
+                        <br/> 200гр</p>
+
+                    <div class="dish-counter">
+                        <label for="qty">Количество порций</label><br/>
+                        <button class="btn-default" id="left" onclick="modify_qty(-1)"></button>
+                        <input id="qty" value="0"/>
+                        <button class="btn-default" id="right" onclick="modify_qty(1)"></button>
+                    </div>
+                    <p class="dish-price"><span>60</span>грн</p>
+                    <button type="button" class="btn btn-default order-button">в корзину</button>
+                </div>
+                <div class="col-sm-3 dish-card">
+                    <img class="dish-img" src="img/dishes/salad.jpg" alt=""/>
+
+                    <p class="dish-title">Салат с сёмгой</p>
+
+                    <p class="dish-desk">Сёмга, огурец, помидор, <br/> листья салата, перец <br/> болгарский, кунжут,
+                        <br/> заправка
+                        <br/> 200гр</p>
+
+                    <div class="dish-counter">
+                        <label for="qty">Количество порций</label><br/>
+                        <button class="btn-default" id="left" onclick="modify_qty(-1)"></button>
+                        <input id="qty" value="0"/>
+                        <button class="btn-default" id="right" onclick="modify_qty(1)"></button>
+                    </div>
+                    <p class="dish-price"><span>60</span>грн</p>
+                    <button type="button" class="btn btn-default order-button">в корзину</button>
+                </div>
+                <div class="col-sm-3 dish-card">
+                    <img class="dish-img" src="img/dishes/salad.jpg" alt=""/>
+
+                    <p class="dish-title">Салат с сёмгой</p>
+
+                    <p class="dish-desk">Сёмга, огурец, помидор, <br/> листья салата, перец <br/> болгарский, кунжут,
+                        <br/> заправка
+                        <br/> 200гр</p>
+
+                    <div class="dish-counter">
+                        <label for="qty">Количество порций</label><br/>
+                        <button class="btn-default" id="left" onclick="modify_qty(-1)"></button>
+                        <input id="qty" value="0"/>
+                        <button class="btn-default" id="right" onclick="modify_qty(1)"></button>
+                    </div>
+                    <p class="dish-price"><span>60</span>грн</p>
+                    <button type="button" class="btn btn-default order-button">в корзину</button>
+                </div>
+                <!--End first row-->
+                <!--Second row-->
+                <div class="col-sm-3 dish-card">
+                    <img class="dish-img" src="img/dishes/dragon-roll.jpg" alt="" style="margin-left: 40px"/>
+
+                    <p class="dish-title">Красный дракон</p>
+
+                    <p class="dish-desk">Угорь, огурец, икра <br/> тобико, японский майоне <br/> лосось
+                        <br/> 210гр</p>
+
+                    <div class="dish-counter">
+                        <label for="qty">Количество порций</label><br/>
+                        <button class="btn-default" id="left" onclick="modify_qty(-1)"></button>
+                        <input id="qty" value="0"/>
+                        <button class="btn-default" id="right" onclick="modify_qty(1)"></button>
+                    </div>
+                    <p class="dish-price"><span>105</span>грн</p>
+                    <button type="button" class="btn btn-default order-button">в корзину</button>
+                </div>
+                <div class="col-sm-3 dish-card">
+                    <img class="dish-img" src="img/dishes/dragon-roll.jpg" alt="" style="margin-left: 40px"/>
+
+                    <p class="dish-title">Красный дракон</p>
+
+                    <p class="dish-desk">Угорь, огурец, икра <br/> тобико, японский майоне <br/> лосось
+                        <br/> 210гр</p>
+
+                    <div class="dish-counter">
+                        <label for="qty">Количество порций</label><br/>
+                        <button class="btn-default" id="left" onclick="modify_qty(-1)"></button>
+                        <input id="qty" value="0"/>
+                        <button class="btn-default" id="right" onclick="modify_qty(1)"></button>
+                    </div>
+                    <p class="dish-price"><span>105</span>грн</p>
+                    <button type="button" class="btn btn-default order-button">в корзину</button>
+                </div>
+                <div class="col-sm-3 dish-card">
+                    <img class="dish-img" src="img/dishes/dragon-roll.jpg" alt="" style="margin-left: 40px"/>
+
+                    <p class="dish-title">Красный дракон</p>
+
+                    <p class="dish-desk">Угорь, огурец, икра <br/> тобико, японский майоне <br/> лосось
+                        <br/> 210гр</p>
+
+                    <div class="dish-counter">
+                        <label for="qty">Количество порций</label><br/>
+                        <button class="btn-default" id="left" onclick="modify_qty(-1)"></button>
+                        <input id="qty" value="0"/>
+                        <button class="btn-default" id="right" onclick="modify_qty(1)"></button>
+                    </div>
+                    <p class="dish-price"><span>105</span>грн</p>
+                    <button type="button" class="btn btn-default order-button">в корзину</button>
+                </div>
+                <div class="col-sm-3 dish-card">
+                    <img class="dish-img" src="img/dishes/dragon-roll.jpg" alt="" style="margin-left: 40px"/>
+
+                    <p class="dish-title">Красный дракон</p>
+
+                    <p class="dish-desk">Угорь, огурец, икра <br/> тобико, японский майоне <br/> лосось
+                        <br/> 210гр</p>
+
+                    <div class="dish-counter">
+                        <label for="qty">Количество порций</label><br/>
+                        <button class="btn-default" id="left" onclick="modify_qty(-1)"></button>
+                        <input id="qty" value="0"/>
+                        <button class="btn-default" id="right" onclick="modify_qty(1)"></button>
+                    </div>
+                    <p class="dish-price"><span>105</span>грн</p>
+                    <button type="button" class="btn btn-default order-button">в корзину</button>
+                </div>
+                <!--End second row-->
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda expedita facere fugiat officiis optio sed
+                sint sunt vel! Adipisci culpa perspiciatis quo ratione, sint soluta tempora. Dolorem praesentium quisquam
+                repellat.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda expedita facere fugiat officiis optio
+                sed sint sunt vel! Adipisci culpa perspiciatis quo ratione, sint soluta tempora. Dolorem praesentium
+                quisquam repellat.</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda expedita facere fugiat officiis optio sed
+                sint sunt vel! Adipisci culpa perspiciatis quo ratione, sint soluta tempora. Dolorem praesentium quisquam
+                repellat.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda expedita facere fugiat officiis optio
+                sed sint sunt vel! Adipisci culpa perspiciatis quo ratione, sint soluta tempora. Dolorem praesentium
+                quisquam repellat.</p>
+        </div>
+
     </div>
 </section>
 
@@ -51,16 +236,8 @@
 
 
 
-
-
-
-
-
-
-
-<footer class="footer navbar-fixed-bottom"></footer>
-
 <script src="libs/jquery-3.1.1.min.js"></script>
 <script src="libs/bootstrap.min.js"></script>
+<script src="js/app.js"></script>
 </body>
 </html>

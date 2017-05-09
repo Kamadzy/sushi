@@ -3,7 +3,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     color: #000;
-
+    min-width: 320px;
 }
 
 /*----------header----------*/
@@ -40,14 +40,162 @@ body {
     margin: 0;
     padding: 15px 2px;
 }
-/*----------main-content----*/
+/*----------jumbotron----*/
 .jumbotron{
     background-image: url(../img/dishes/jumbotrom_img.jpg);
     height: 350px;
     width: 100%;
+    margin-bottom: 0;
+}
+.jumb-content{
+    text-align: center;
+    padding-top: 10px;
+    background-color: rgba(47,47,49,0.7);
+    border: none;
+    border-radius: 11px;
+    margin: 30px 225px;
+}
+
+.jumb-content h3{
+    color: #fff;
+    font-size: 35px;
+}
+.jumb-content button{
+    margin: 15px;
+    font-size: 20px;
+    text-transform: uppercase;
+    background-color: #f2d902;
+    padding: 8px 16px;
+    border-radius: 11px;
+    border: none;
+}
+.jumb-content button:hover{
+    background-color: #f9ef9a;
+}
+.discount{
+    font-weight: 600;
+}
+/*----------main-content----*/
+.dishes-nav{
+    height: 50px;
+    width: 100%;
+    background-color: #2f2f31;
+}
+.dishes-nav li{
+    color: #fff;
+    text-decoration: none;
+}
+.dishes-nav li>p>span{
+    color: #f2d902;
+    text-decoration: none;
+}
+.dishes-nav li>p{
+    display: block;
+    margin: 4px 10px 0 0;
+}
+.dishes-nav li>i{
+    display: block;
+    margin: 4px 0 0 0;
+}
+
+.dishes-nav li>a{
+    color: #fff;
+    text-decoration: none;
+    margin: 0 50px;
+}
+.dishes-nav li>a:hover{
+    color: #fff;
+    text-decoration: none;
+    background-color: #7c7c82;
+}
+.main-dish-menu{
+    height: 1000px;
+    width: 100%;
+}
+.main-dish-menu h1{
+    text-align: center;
+    margin: 40px 0;
+}
+.dish-card{
+    border: 1px solid #2f2f31;
+    text-align: center;
+}
+.dish-card:hover{
+    box-shadow: 0 0 16px rgba(0, 0, 0, .5);
+}
+.dish-card p{
+    text-align: center;
+}
+.dish-img{
+    display: block;
+    margin: 20px 0 0 20px;
+    height: 160px;
+}
+.dish-title{
+    font-weight: 600;
+    font-size: 20px;
+}
+#left{
+    height: 20px;
+    width: 22px;
+    background-image: url(../img/icon-arrow-left.png);
+    background-repeat: no-repeat;
+    border: none;
+    text-align: center;
+}
+#right{
+    height: 20px;
+    width: 20px;
+    background-image: url(../img/icon-arrow-right.png);
+    background-repeat: no-repeat;
+    border: none;
+    text-align: center;
+}
+#right,#left:hover{
+    background-color: #fff;
+}
+.dish-card{
+    margin: 0 15px 50px;
+    padding-left: 10px;
+    width: 270px;
+}
+.dish-card label{
+    float: left;
+    display: block;
+    margin-top: 20px;
+}
+.dish-card input{
+    width: 15px;
+    padding: 1px;
+}
+.dish-card .order-button{
+    margin: 15px;
+    font-size: 16px;
+    text-transform: uppercase;
+    background-color: #f2d902;
+    padding: 8px 16px;
+    border-radius: 11px;
+    border: none;
+}
+.dish-card .order-button:hover{
+    background-color: #f9ef9a;
+}
+.dish-card span{
+    font-size: 40px;
+    font-weight: 600;
+}
+.dish-price{
+    display: block;
+    margin: 0;
+    width: 80px;
+    float: left;
 }
 /*----------footer----------*/
-
+.footer{
+    color:#fff;
+    background-color: #2f2f31;
+    text-decoration: none;
+}
 
 
 
@@ -55,8 +203,10 @@ body {
 
 
 /*Large Devices, Wide Screens*/
-@media only screen and (max-width: 1200px){
-
+@media only screen and (max-width: 1280px){
+    .container{
+        width: 1230px;
+    }
 }
 /*Medium Devices, Desktops*/
 @media only screen and (max-width:992px){
