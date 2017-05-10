@@ -5,7 +5,9 @@ body {
     color: #000;
     min-width: 320px;
 }
-
+textarea {
+    resize: none;
+}
 /*----------header----------*/
 .navbar {
     background-color: #2f2f31;
@@ -227,6 +229,37 @@ body {
     color: #9f9f9f;
     font-size: 12px;
 }
+/*----------contact page----------*/
+.address{
+    text-align: center;
+}
+.address p{
+    margin: 15px 0;
+}
+.contact-map img{
+    width: 100%;
+    margin-top: 20px;
+}
+.contact-form button {
+    margin: 5px;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+    background-color: #f2d902;
+    padding: 8px 16px;
+    border-radius: 11px;
+    border: none;
+}
+.contact-form button:hover{
+    background-color: #f9ef9a;
+}
+
+
+
+
+
+
+
 
 
 /*Large Devices, Wide Screens*/
