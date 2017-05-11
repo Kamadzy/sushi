@@ -277,6 +277,10 @@ textarea {
 
 }
 .order-btn{
+    text-align:center;
+}
+
+.order-btn button{
     margin: 5px;
     font-size: 15px;
     text-transform: uppercase;
@@ -287,18 +291,16 @@ textarea {
     border: none;
     text-align: center;
 }
-.order-btn:hover{
+.order-btn button:hover{
     background-color: #f9ef9a;
 }
 .basket-page span{
     font-weight: 600;
 }
-.basket-page h3 {
+.basket-page h2 {
     float: right;
 }
-.basket-page button{
-    text-align: center;
-}
+
 
 
 
