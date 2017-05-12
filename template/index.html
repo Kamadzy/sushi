@@ -26,21 +26,21 @@
             </button>
             <a href="index.html"><h1 class="main-text">YOUR LOGO</h1></a>
         </div>
-        <div class="navbar-collapse" id="myNavbar">
+        <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="#">ГЛАВНАЯ</a></li>
                 <li><a href="#">ДОСТАВКА И ОПЛАТА</a></li>
                 <li><a href="#">КОНТАКТЫ</a></li>
                 <li><a href="#">КОРЗИНА</a></li>
-                <li><a class="head-flag" href="#"><img src="img/usa_flag.png" alt=""/></a></li>
-                <li><a class="head-flag" href="#" style="margin-right: 40px"><img src="img/ru_flag.png" alt=""/></a>
+                <li><a class="head-flag hidden-xs" href="#"><img src="img/usa_flag.png" alt=""/></a></li>
+                <li><a class="head-flag hidden-xs" href="#" style="margin-right: 40px"><img src="img/ru_flag.png" alt=""/></a>
                 </li>
             </ul>
         </div>
         <!-- /.navbar-collapse -->
     </nav>
 </header>
-<section class="jumbotron">
+<section class="jumbotron ">
     <div class="container">
         <div class="row">
             <div class="jumb-content">
@@ -55,7 +55,7 @@
 <section class="main-content">
     <div class="row">
         <div class="dishes-nav">
-            <ul class="nav navbar-nav">
+            <ul class="nav navbar-nav" id="myNavbar">
                 <li><a href="#">РОЛЛЫ</a></li>
                 <li><a href="#">ПИЦЦА</a></li>
                 <li><a href="#">БУРГЕРЫ</a></li>
@@ -66,9 +66,10 @@
                 <li><i class="fa fa-shopping-basket fa-3x" aria-hidden="true"></i></li>
             </ul>
         </div>
+        <h1>Новинки</h1>
         <div class="container">
             <div class="main-dish-menu">
-                <h1>Новинки</h1>
+
                 <!--First row-->
                 <div class="col-sm-3 dish-card">
                     <img class="dish-img" src="img/dishes/salad.jpg" alt=""/>
@@ -214,25 +215,27 @@
                 </div>
                 <!--End second row-->
             </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda expedita facere fugiat officiis optio
-                sed
-                sint sunt vel! Adipisci culpa perspiciatis quo ratione, sint soluta tempora. Dolorem praesentium
-                quisquam
-                repellat.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda expedita facere fugiat officiis
-                optio
-                sed sint sunt vel! Adipisci culpa perspiciatis quo ratione, sint soluta tempora. Dolorem praesentium
-                quisquam repellat.</p>
+            <div class="some-text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda expedita facere fugiat officiis optio
+                    sed
+                    sint sunt vel! Adipisci culpa perspiciatis quo ratione, sint soluta tempora. Dolorem praesentium
+                    quisquam
+                    repellat.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda expedita facere fugiat officiis
+                    optio
+                    sed sint sunt vel! Adipisci culpa perspiciatis quo ratione, sint soluta tempora. Dolorem praesentium
+                    quisquam repellat.</p>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda expedita facere fugiat officiis optio
-                sed
-                sint sunt vel! Adipisci culpa perspiciatis quo ratione, sint soluta tempora. Dolorem praesentium
-                quisquam
-                repellat.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda expedita facere fugiat officiis
-                optio
-                sed sint sunt vel! Adipisci culpa perspiciatis quo ratione, sint soluta tempora. Dolorem praesentium
-                quisquam repellat.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda expedita facere fugiat officiis optio
+                    sed
+                    sint sunt vel! Adipisci culpa perspiciatis quo ratione, sint soluta tempora. Dolorem praesentium
+                    quisquam
+                    repellat.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda expedita facere fugiat officiis
+                    optio
+                    sed sint sunt vel! Adipisci culpa perspiciatis quo ratione, sint soluta tempora. Dolorem praesentium
+                    quisquam repellat.</p>
+            </div>
         </div>
 
     </div>
@@ -242,7 +245,7 @@
         <div class="row">
             <div class="col-md-10">
                 <div class="row">
-                    <div class="col-md-2 col-sm-6">
+                    <div class="col-md-2 col-sm-6 hidden-xs">
                         <div class="contacts-footer">
                             <p><a href="#"> Главная</a></p>
                             <p><a href="#"> Оплата и доставка</a></p>
@@ -258,7 +261,7 @@
                             <p><a href="#"> Паста</a></p>
                         </div>
                     </div>
-                    <div class=" col-md-1 ">
+                    <div class=" col-md-1">
                         <div class="menu-sec-column">
                             <p><a href="#"> Салаты</a></p>
                             <p><a href="#"> Десерты</a></p>
@@ -266,8 +269,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-2 row-item-col">
-                <h3>YOUR LOGO</h3>
+            <div class="col-md-2 col-xs-6">
+                <h3 class="hidden-xs">YOUR LOGO</h3>
 
                 <div class="social">
                     <a href="#"><i class="fa fa-vk fa-3x" aria-hidden="true"></i></a>

@@ -78,6 +78,9 @@ textarea {
     font-weight: 600;
 }
 /*----------main-content----*/
+.main-content{
+    width: 100%;
+}
 .dishes-nav{
     height: 50px;
     width: 100%;
@@ -192,6 +195,7 @@ textarea {
     width: 80px;
     float: left;
 }
+
 /*----------footer----------*/
 .footer{
     color:#fff;
@@ -278,6 +282,7 @@ textarea {
 }
 .order-btn{
     text-align:center;
+    margin-bottom: 40px;
 }
 
 .order-btn button{
@@ -289,7 +294,6 @@ textarea {
     padding: 8px 16px;
     border-radius: 11px;
     border: none;
-    text-align: center;
 }
 .order-btn button:hover{
     background-color: #f9ef9a;
@@ -301,25 +305,13 @@ textarea {
     float: right;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.navbar-toggle{
+    border: none;
+}
+.icon-bar {
+    background-color:#f2d902 !important;
+    padding: 2px;
+}
 
 /*Large Devices, Wide Screens*/
 @media only screen and (max-width: 1280px){
@@ -337,4 +329,36 @@ textarea {
 }
 /*Extra Small Devices, Phones*/
 @media only screen and (max-width:480px) {
+    .some-text{
+        width: 30%;
+    }
+    .copyright{
+        margin-top: 10px;
+        width: 30%;
+    }
+    .jumb-content{
+        text-align: center;
+        padding-top: 10px;
+        background-color: rgba(47,47,49,0.7);
+        border: none;
+        border-radius: 11px;
+        margin: 30px 225px;
+    }
+
+    .jumb-content h3{
+        color: #fff;
+        font-size: 25px;
+    }
+    .jumb-content button{
+        margin: 15px;
+        font-size: 20px;
+        text-transform: uppercase;
+        background-color: #f2d902;
+        padding: 8px 16px;
+        border-radius: 11px;
+        border: none;
+    }
+    .jumb-content button:hover{
+        background-color: #f9ef9a;
+    }
 }
